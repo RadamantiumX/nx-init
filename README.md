@@ -84,3 +84,17 @@ cada RUTA AGRUPADA. Asimismo, tenemos la opción de crear una manejo de ERRORES 
 ## LOADING
 
 Al igual que el manejo de ERRORES, tambien tenemos la posibilidad de manejar las cargas de paginas con LOADING, ubicando un archivo llamado **loading.tsx** en la ROOT del proyecto.
+
+
+## DATA FETCHING
+
+Podríamos usar HOOKS para poder obtener data de alguna API, o servidor, pero no es la forma mas eficiente de 
+hacerlo.
+En NEXTJS tenemos una propiedad que esta disponible para utilizar cuando realizamos algún FETCHING, se llama
+**serverComponentsHmrCache** *(HMR: Hot Module Replacement)*, esto quiere decir que, tendremos mas rápidas 
+respuestas y reduciremos las las llamadas a la API, lo cual puede tener un costo adicional.
+
+El DATA FETCHING en el SSR, es muy beneficioso, ya que reduce todo los parametros de carga y costo adicional, y,
+sobre todo, es amigable con el SEO. Se evita la duplicación del FETCHING DATA, solo se pide una sola vez. Y, obviamente, la seguridad también es un factor importante en el FETCHING, lo cual en el SSR se le da mas importancia
+y respalda las llamadas a la API, protegiendolas de ataques externos.
+ 
