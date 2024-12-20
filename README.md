@@ -108,4 +108,9 @@ cuando el usuario lo solicita.
 
 ## PARTIAL PRERENDERING
 
-Combina STATIC y DYNAMIC RENDERING. NEXTJS genera una carcaza estatica del despligue, que son, el diseño y cualquier parte estatica de la página, en forma de componentes, en estos componentes hay marcadores para el contenido dinámico, lo que hacemos en envolver todo ese contenido dinámico en el tag <Suspenese/>
+Combina STATIC y DYNAMIC RENDERING. NEXTJS genera una carcaza estatica del despligue, que son, el diseño y cualquier parte estatica de la página, en forma de componentes, en estos componentes hay marcadores para el contenido dinámico, lo que hacemos en envolver todo ese contenido dinámico en el tag **Suspenese**, mientras que el contenido STATIC se carga automáticamente, el DYNAMIC espera a ser requerido.
+
+
+## API ROUTES
+
+En NEXTJS es muy sencillo la utilización de un servidor, ya que, no debemos crear uno de forma separada del proyecto, lo podemos incluir aquí mismo. Este FRAMEWORK utiliza el renderizado del servidor, es por ello, que realizar llamadas a la API, y la base de datos, es totalmente recomendable. De la misma forma que organizamos los directorio y archivos, para UI, lo podemos hacer en una API.
