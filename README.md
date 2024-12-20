@@ -97,4 +97,15 @@ respuestas y reduciremos las las llamadas a la API, lo cual puede tener un costo
 El DATA FETCHING en el SSR, es muy beneficioso, ya que reduce todo los parametros de carga y costo adicional, y,
 sobre todo, es amigable con el SEO. Se evita la duplicación del FETCHING DATA, solo se pide una sola vez. Y, obviamente, la seguridad también es un factor importante en el FETCHING, lo cual en el SSR se le da mas importancia
 y respalda las llamadas a la API, protegiendolas de ataques externos.
- 
+
+
+## STATIC SIDE GENERATION (SSG)
+
+Es una técnica que genera las páginas HTML al momento de hacer la BUILD, es decir, cuando se hace el despligue y no
+cuando el usuario lo solicita.
+
+**Podemos ver otros tipo de RENDERING con NEXTJS en la documentación oficial, uno de los recientes en el PPR (Partial PreRendering).**
+
+## PARTIAL PRERENDERING
+
+Combina STATIC y DYNAMIC RENDERING. NEXTJS genera una carcaza estatica del despligue, que son, el diseño y cualquier parte estatica de la página, en forma de componentes, en estos componentes hay marcadores para el contenido dinámico, lo que hacemos en envolver todo ese contenido dinámico en el tag <Suspenese/>
